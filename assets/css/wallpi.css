@@ -829,7 +829,7 @@ h6 {
 .sec-title__tagline::after, .sec-title__tagline::before {
   content: "";
   position: absolute;
-  width: 111px;
+  width: 176px;
   height: 1px;
   border-bottom: 1px solid var(--wallpi-base, #f58220);
   border-left: 1px solid var(--wallpi-base, #f58220);
