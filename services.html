@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="css2-1?family=Pathway+Extreme:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="css2-1?family=Pathway+Extreme:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
     <link href="css2-2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
@@ -34,15 +36,47 @@
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css">
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/wallpi.css">
- <!-- banner -->
- <style>
- .mySlides {display:none;}
+    <!-- banner -->
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+<style>
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.07) rotate(1deg);
+    }
+
+    .image-caption {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #f5821f;
+    }
 </style>
-<!-- banner -->
+    <!-- banner -->
 </head>
+
 <body class="custom-cursor">
     <div class="custom-cursor__cursor"></div>
-    <div class="custom-cursor__cursor-two"></div> 
+    <div class="custom-cursor__cursor-two"></div>
     <!-- /.preloader -->
     <div class="page-wrapper">
         <div class="topbar-one topbar-one--two">
@@ -86,11 +120,11 @@
                                 <i class="fab fa-instagram" aria-hidden="true"></i>
                                 <span class="sr-only">Instagram</span>
                             </a>
-                        </div> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <header class="main-header main-header--two sticky-header sticky-header--normal">
             <div class="container-fluid">
@@ -102,14 +136,14 @@
                     </div><!-- /.main-header__logo -->
                     <nav class="main-header__nav main-menu">
                         <ul class="main-menu__list">
-                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav><!-- /.main-header__nav -->
-        
+
                     <div class="main-header__right">
                         <div class="mobile-nav__btn mobile-nav__toggler">
                             <span></span>
@@ -119,117 +153,83 @@
                         <a href='tel:+917459945746' class="main-header__cart">
                             <img src="gall/call.png" style="width:31px;">
                         </a><!-- /.search-toggler -->
-        
+
                         <a href="#" class="wallpi-btn main-header__btn">
-                            <span >Book Appointment</span>
+                            <span>Book Appointment</span>
                         </a><!-- /.thm-btn main-header__btn -->
                     </div><!-- /.main-header__right -->
                 </div><!-- /.main-header__inner -->
             </div><!-- /.container-fluid -->
         </header><!-- /.main-header -->
 
-  <!-- Banner --> 
-                <div class="ttm-rev_slider-wide" style="max-width:100%;"> 
-                    <div class="w3-content w3-section" style="max-width:100%;height:100%;">
-                        <img class="mySlides" src="banner/bg-2.png" style="width:100%;height:100%;"> 
-                    </div>
-                </div>
-        <!-- End Banner -->
-
-        <section class="address-one">
-            <div class="container">
-                <div class="row">
-                    <div class="sec-title">
-
-
-                        <h2 class="sec-title__title">Contact Info</h2><!-- /.sec-title__title --> 
-                    </div><!-- /.sec-title -->
-
-                    <div class="address-one__wrap text-center">
-                        <div class="row gutter-y-20">
-                            <div class="col-md-4 address-one__colwrap">
-                                <div class="address-one__col">
-                                    <span class="address-one__icon icon-map"></span>
-                                    <h4 class="address-one__title">Address</h4>
-                                    <p class="address-one__location"> Lucknow</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 address-one__colwrap">
-                                <div class="address-one__col">
-                                    <span class="address-one__icon icon-phoned"></span>
-                                    <h4 class="address-one__title">Phone</h4>
-                                    <ul class="list-unstyled address-one__list">
-                                        <li><a href="tel:+91-6393273745">+91-6393273745 , 7459945746</a></li> 
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 address-one__colwrap">
-                                <div class="address-one__col">
-                                    <span class="address-one__icon icon-email1"></span>
-                                    <h4 class="address-one__title">Email</h4>
-                                    <ul class="list-unstyled address-one__list">
-                                        <li><a href="mailto:crm.guruinteriors@gmail.com"> crm.guruinteriors@gmail.com</a></li> 
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Banner -->
+<div class="container py-4">
+    <h2 class="text-center text-warning fw-semibold mb-4">Our Services</h2>
+    <div class="row g-4">
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="banner/interior-slide-10.jpg" alt="Image 1">
+                <div class="image-caption">3D Design</div>
             </div>
-        </section>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="banner/interior-slide-2.jpg" alt="Image 2">
+                <div class="image-caption">Plumbing</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="banner/interior-slide-3.jpg" alt="Image 3">
+                <div class="image-caption">Electrical</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="banner/interior-slide-5.jpg" alt="Image 4">
+                <div class="image-caption">Flooring</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="banner/interior-slide-6.jpg" alt="Image 4">
+                <div class="image-caption">Furniture</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="banner/interior-slide-7.jpg" alt="Image 4">
+                <div class="image-caption">Painting</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="banner/interior-slide-8.jpg" alt="Image 4">
+                <div class="image-caption">Exterior ACP/HPL</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="banner/interior-slide-9.jpg" alt="Image 4">
+                <div class="image-caption">Hotel Room Interior Designing</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="banner/interior-slide-10.jpg" alt="Image 4">
+                <div class="image-caption">Restaurant - Cafe & Bar Design</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- End Banner -->
+   
 
-        <section class="contact-one">
-            <div class="container">
-                <div class="contact-one__inner">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <form class="contact-one__form contact-form-validated form-one wow fadeInUp" data-wow-duration="1500ms" action=" ">
-                                <div class="form-one__group">
-                                    <div class="form-one__control">
-                                        <input type="text" name="name" placeholder="Your name">
-                                    </div><!-- /.form-one__control -->
+       
+        <!-- why-choose-one End -->
 
-                                    <div class="form-one__control">
-                                        <input type="email" name="email" placeholder="Email Address">
-                                    </div><!-- /.form-one__control -->
 
-                                    <div class="form-one__control">
-                                        <input type="text" name="phone" placeholder="Phone">
-                                    </div><!-- /.form-one__control -->
-
-                                    <div class="form-one__control">
-                                        <input type="text" name="subject" placeholder="Subject">
-                                    </div><!-- /.form-one__control -->
-
-                                    <div class="form-one__control form-one__control--full">
-                                        <textarea name="message" placeholder="Your Message here"></textarea>
-                                    </div><!-- /.form-one__control -->
-
-                                    <div class="form-one__control form-one__control--full">
-                                        <button type="submit" class="wallpi-btn wallpi-btn--submit"><span>Send A Message</span></button>
-                                    </div><!-- /.form-one__control -->
-                                </div><!-- /.form-one__group -->
-                            </form>
-                            <div class="result"></div>
-                        </div><!-- /.col-xl-5 -->
-                    </div><!-- /.row -->
-                </div><!-- /.contact-one__inner -->
-            </div><!-- /.container -->
-        </section><!-- /.contact-one -->
-
-        <section class="contact-map">
-            <div class="container-fluid">
-                <div class="google-map google-map__contact">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227821.98710530254!2d80.77769949830773!3d26.848902829067057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1740130702669!5m2!1sen!2sin"
-                width="100%" height="411px" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <!-- /.google-map -->
-            </div><!-- /.container-fluid -->
-        </section><!-- /.contact-map --> 
         <footer class="main-footer background-black-3">
             <div class="main-footer__bg background-black-3"
                 style="background-image: url(assets/images/backgrounds/footer-bg1-1.jpg);"></div>
@@ -237,7 +237,7 @@
                 <div class="container">
                     <div class="row"
                         style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 30px;">
-        
+
                         <!-- About Section -->
                         <div class="footer-widget__col footer-widget__col--about" style="flex: 1; min-width: 300px;">
                             <div class="footer-widget__col__content">
@@ -245,13 +245,14 @@
                                     <img src="gall/GURU-INTERIOR-logo.png" width="170" alt="">
                                 </a>
                                 <p class="footer-widget__col__content__text" style="color: #fff;">
-                                    Guru Interior, where your vision for a beautiful and functional space comes to life,..
+                                    Guru Interior, where your vision for a beautiful and functional space comes to
+                                    life,..
                                     <a href="
-                                            #" style="color: #f58220">Read More</a>
+                                    #" style="color: #f58220">Read More</a>
                                 </p>
                             </div>
                         </div>
-        
+
                         <!-- Quick Links -->
                         <div class="footer-widget__col footer-widget__col--links" style="flex: 1; min-width: 250px;">
                             <div class="footer-widget__col__content">
@@ -261,12 +262,12 @@
                                     <li><a href="index.html" style="color: #fff;">Home</a></li>
                                     <li><a href="about.html" style="color: #fff;">About Us</a></li>
                                     <li><a href="portfolio.html" style="color: #fff;">Portfolio</a></li>
-                                    <li><a href="services.html" style="color: #fff;">Services</a></li>
-                                    <li><a href="#" style="color: #fff;">Contact Us</a></li>
+                                    <li><a href="#" style="color: #fff;">Services</a></li>
+                                    <li><a href="contact.html" style="color: #fff;">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
-        
+
                         <!-- Contact Info -->
                         <div class="footer-widget__col footer-widget__col--news" style="flex: 1; min-width: 300px;">
                             <div class="footer-widget__col__content">
@@ -276,15 +277,16 @@
                             <p style="color:#ffffff;"><i class="fa fa-envelope"></i> crm.guruinteriors@gmail.com</p>
                             <p style="color:#ffffff;"><i class="fa fa-phone-alt"></i> +91-6393273745 , 7459945746</p>
                         </div>
-        
+
                     </div>
                 </div>
             </div>
-        
+
             <div class="main-footer__bottom">
                 <div class="container">
                     <div class="main-footer__bottom__inner d-flex align-items-center justify-content-between">
-                        <p class="copyright mb-0" style="color:#ffffff">© <span class="current-year"></span> Guru Interior. All
+                        <p class="copyright mb-0" style="color:#ffffff">© <span class="current-year"></span> Guru
+                            Interior. All
                             Rights Reserved. | Designed By: <a href="#">Guru Interior Team</a></p>
                         <div class="main-footer__social">
                             <a href="#" target="_blank">
@@ -316,46 +318,47 @@
     <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
         <!-- /.mobile-nav__overlay -->
-    <div class="mobile-nav__content">
-        <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-        <div class="logo-box">
-            <a href="index.html" aria-label="logo image"><img src="gall/GURU-INTERIOR-logo.png" width="155" alt=""></a>
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="gall/GURU-INTERIOR-logo.png" width="155"
+                        alt=""></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="mailto: crm.guruinteriors@gmail.com"> crm.guruinteriors@gmail.com</a>
+                </li>
+                <li>
+                    <i class="icon-chat"></i>
+                    <a href="tel:+91-6393273745">+91-6393273745 , 7459945746</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__social">
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="sr-only">Linkedin</span>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div><!-- /.mobile-nav__social -->
         </div>
-        <!-- /.logo-box -->
-        <div class="mobile-nav__container"></div>
-        <!-- /.mobile-nav__container -->
-    
-        <ul class="mobile-nav__contact list-unstyled">
-            <li>
-                <i class="fas fa-phone-alt"></i>
-                <a href="mailto: crm.guruinteriors@gmail.com"> crm.guruinteriors@gmail.com</a>
-            </li>
-            <li>
-                <i class="icon-chat"></i>
-                <a href="tel:+91-6393273745">+91-6393273745 , 7459945746</a>
-            </li>
-        </ul><!-- /.mobile-nav__contact -->
-        <div class="mobile-nav__social">
-            <a href="#" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-                <span class="sr-only">Linkedin</span>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fab fa-twitter" aria-hidden="true"></i>
-                <span class="sr-only">Twitter</span>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fab fa-facebook" aria-hidden="true"></i>
-                <span class="sr-only">Facebook</span>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fab fa-instagram" aria-hidden="true"></i>
-                <span class="sr-only">Instagram</span>
-            </a>
-        </div><!-- /.mobile-nav__social -->
-    </div>
         <!-- /.mobile-nav__content -->
-    </div> 
+    </div>
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
         <span class="scroll-to-top__text">back top</span>
@@ -385,28 +388,31 @@
     <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
     <!-- template js -->
     <script src="assets/js/wallpi.js"></script>
-        <!-- banner -->
-<script>
-var myIndex = 0;
-carousel();
+    <!-- banner -->
+    <script>
+        var myIndex = 0;
+        carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3000); // Change image every 7 seconds
-}
-</script>
-<!-- banner --> 
- <!-- eform -->
-<link type='text/css' href='eform/basic.css' rel='stylesheet' media='screen'>
-<div id='basic-modal'> <a href='https://api.whatsapp.com/send?phone=916393273745' target="_blank" class='basic'><img src="gall/wp.gif" style="position:fixed; z-index:999; bottom:131px; right:0px;width:47px;"></a> </div> 
-<div id='basic-modal'> <a href='tel:+916393273745' class='basic'><img src="gall/cl.gif" style="position:fixed; z-index:999; bottom:131px; left:0px;width:55px;"></a></div> 
-  <!-- eform -->
-</body> 
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 7 seconds
+        }
+    </script>
+    <!-- banner -->
+    <!-- eform -->
+    <link type='text/css' href='eform/basic.css' rel='stylesheet' media='screen'>
+    <div id='basic-modal'> <a href='https://api.whatsapp.com/send?phone=916393273745' class='basic'><img
+                src="gall/wp.gif" style="position:fixed; z-index:999; bottom:131px; right:0px;width:47px;"></a> </div>
+    <div id='basic-modal'> <a href='tel:+916393273745' class='basic'><img src="gall/cl.gif"
+                style="position:fixed; z-index:999; bottom:131px; left:0px;width:55px;"></a></div>
+    <!-- eform -->
+</body>
+
 </html>
