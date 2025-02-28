@@ -39,6 +39,68 @@
  <style>
  .mySlides {display:none;}
 </style>
+<style>
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.07) rotate(1deg);
+    }
+
+    .image-caption {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #f5821f;
+    }
+    .content-container {
+    text-align: center;
+    padding: 20px;
+        max-height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.content-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more span {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+</style>
 <!-- banner -->
 </head>
 <body class="custom-cursor">
@@ -175,7 +237,7 @@
                         <p class="about-two__contentcol__text">Founded on the belief that great design enhances the way we live and work, Guru Interior has been delivering high-quality interior solutions that stand the test of time. What began as a small team of visionary designers has now
                         grown into a full-service interior design firm, renowned for our innovative approach and meticulous attention to detail.</p>
                         <div class="about-two__contentcol__btnwrap">
-                            <a href="#" class="wallpi-btn about-one--btn"><span>Read More</span></a> 
+                            <a href="about.html" class="wallpi-btn about-one--btn"><span>Read More</span></a> 
                         </div>
                     </div><!-- /.why-choose-two__image -->
                 </div><!-- /.row -->
@@ -532,178 +594,53 @@
             </div> 
         </section> 
  
-        <section class="faq-page" style="background:#ffffff;margin-top:-7%;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="faq-page__titlewrap">
-                            <div class="faq-page__titlinner">
-                                <h3 class="faq-page__title">Frequently Asked Questions</h3>
-                                <p class="faq-page__text" style="text-align: justify;">Designing a space can be an exciting yet overwhelming process. To make it easier for you, we've compiled a list of
-                                frequently asked questions about our interior design services. Whether you're curious about our design approach, project
-                                timelines, or pricing, we’re here to provide clarity.</p>
-                            </div>
-                            <div class="faq-page__imgeffect">
-                                <img src="assets/images/resources/faq-img1-1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+    <div class="container py-4">
+        <h2 class="text-center text-warning fw-semibold mb-4">Our Services</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="image-container">
+                    <img src="banner/interior-slide-10.jpg" alt="Image 1">
+                    <div class="image-caption">3D Design</div>
                 </div>
-
-                <div class="row gutter-y-30">
-                    <div class="col-lg-6"> 
-                        <div class="faq-page__accordion wallpi-accrodion" data-grp-name="wallpi-accrodion1">
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4 style="font-family: Lora;">
-                                        What services do you offer?
-                                        <span class="accrodion-title__icon icon-arrow-small-down"></span><!-- /.accrodion-title__icon -->
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p style="font-family: Lora; text-align: justify;">At Guru Interior, we offer a wide range of services including residential and commercial interior design, turnkey solutions, custom furniture and decor, wallpaper services, window blinds, laminate flooring, WPC panels, aluminium panels, and modular kitchen designs. </p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4 style="font-family: Lora;">
-                                        How do I get started with my interior design project?
-                                        <span class="accrodion-title__icon icon-arrow-small-down"></span><!-- /.accrodion-title__icon -->
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-
-                                <div class="accrodion-content">
-                                    <div class="inner" style="text-align: justify;">
-                                        <p>Getting started is easy! Simply contact us to schedule a consultation. During this initial meeting, we'll discuss your vision, preferences, and requirements to develop a tailored plan for your project.</p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4 style="font-family: Lora;">
-                                        What is the process for a typical interior design project?
-                                        <span class="accrodion-title__icon icon-arrow-small-down"></span><!-- /.accrodion-title__icon -->
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-
-                                <div class="accrodion-content">
-                                    <div class="inner" >
-                                        <p style="text-align: justify;">Our process typically involves an initial consultation, design concept development, material selection, project planning, execution, and final walkthrough. We ensure clear communication and collaboration at every step to achieve the best results.</p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4 style="font-family: Lora;">
-                                        Do you offer custom design solutions?
-                                        <span class="accrodion-title__icon icon-arrow-small-down"></span><!-- /.accrodion-title__icon -->
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p style="text-align: justify;">Yes, we specialize in creating bespoke design solutions that cater to your unique needs and preferences. Our team will work closely with you to design and execute custom interiors that reflect your personal style.</p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4 style="font-family: Lora;">
-                                        How long does an interior design project take?
-                                        <span class="accrodion-title__icon icon-arrow-small-down"></span><!-- /.accrodion-title__icon -->
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p style="text-align: justify;">The duration of a project depends on its scope and complexity. After understanding your requirements, we provide a detailed timeline to ensure that the project is completed efficiently and on schedule.</p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                        </div>
-                    </div><!-- /.col-lg-8 col-xl-9 -->
-                    <div class="col-lg-6"> 
-                        <div class="faq-page__accordion wallpi-accrodion" data-grp-name="wallpi-accrodion2">
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4 style="font-family: Lora;">
-                                        Can you work within my budget?
-                                        <span class="accrodion-title__icon icon-arrow-small-down"></span><!-- /.accrodion-title__icon -->
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p style="text-align: justify;"> Absolutely! We pride ourselves on offering cost-effective services without compromising on quality. We will work with you to develop a design plan that fits your budget while meeting your expectations.</p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4 style="font-family: Lora;">
-                                       Do you offer eco-friendly design options?
-                                        <span class="accrodion-title__icon icon-arrow-small-down"></span><!-- /.accrodion-title__icon -->
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p style="text-align: justify;">Yes, we are committed to sustainable design practices. We offer a variety of eco-friendly materials and solutions to ensure that your space is both beautiful and environmentally responsible.</p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4 style="font-family: Lora;">
-                                         What areas do you serve?
-                                        <span class="accrodion-title__icon icon-arrow-small-down"></span><!-- /.accrodion-title__icon -->
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p style="text-align: justify;">We primarily serve [your location] and surrounding areas. If you're located outside this region, please contact us to discuss potential arrangements.</p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4 style="font-family: Lora;">
-                                       How do you ensure quality in your projects?
-                                        <span class="accrodion-title__icon icon-arrow-small-down"></span><!-- /.accrodion-title__icon -->
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p style="text-align: justify;">Quality is our top priority. We use only the finest materials and work with skilled craftsmen to ensure that every detail of your project meets our high standards. Additionally, we conduct thorough inspections throughout the process to maintain exceptional quality.</p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4 style="font-family: Lora;">
-                                        What if I need help after the project is completed?
-                                        <span class="accrodion-title__icon icon-arrow-small-down"></span><!-- /.accrodion-title__icon -->
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p style="text-align: justify;">We offer continued support and assistance even after your project is completed. Our team is always available to address any concerns or provide additional services to ensure your complete satisfaction. </p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                        </div>
-                    </div><!-- /.col-lg-8 col-xl-9 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.faq-page-accordion -->
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="image-container">
+                    <img src="banner/interior-slide-2.jpg" alt="Image 2">
+                    <div class="image-caption">Plumbing</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="image-container">
+                    <img src="banner/interior-slide-3.jpg" alt="Image 3">
+                    <div class="image-caption">Electrical</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="image-container">
+                    <img src="banner/interior-slide-5.jpg" alt="Image 4">
+                    <div class="image-caption">Flooring</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="image-container">
+                    <img src="banner/interior-slide-6.jpg" alt="Image 4">
+                    <div class="image-caption">Furniture</div>
+                </div>
+            </div>
+        <div class="col-12 col-md-4">
+            <div class="content-container">
+                <div class="content-title">See More</div>
+                <a href="services.html" class="read-more">
+                    See More <span>&rarr;</span>
+                </a>
+            </div>
+        </div>
+         
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- /.faq-page-accordion -->
         <footer class="main-footer background-black-3">
             <div class="main-footer__bg background-black-3" style="background-image: url(assets/images/backgrounds/footer-bg1-1.jpg);"></div>
             <div class="main-footer__top" style="background-color:#222; padding: 40px 0;">
@@ -719,8 +656,7 @@
                                 </a>
                                 <p class="footer-widget__col__content__text" style="color: #fff;">
                                     Guru Interior, where your vision for a beautiful and functional space comes to life,..
-                                    <a href="
-                                    #" style="color: #f58220">Read More</a>
+                                    <a href="about.html" style="color: #f58220">Read More</a>
                                 </p>
                             </div>
                         </div>
