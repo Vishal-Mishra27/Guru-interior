@@ -2638,7 +2638,7 @@ h6 {
 # Contact
 --------------------------------------------------------------*/
 .address-one {
-  padding-top: 108px;
+  padding-top: 48px;
   position: relative;
   z-index: 2;
   margin-bottom: -190px;
@@ -2740,7 +2740,7 @@ h6 {
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 39px;
-  font-size: 48px;
+  font-size: 77px;
   line-height: 1;
   color: var(--wallpi-text, #2a2826);
   transition: all 0.5s ease;
@@ -3290,7 +3290,7 @@ h6 {
   transform: rotateX(-360deg);
 }
 .topbar-one--two {
-  background-color:#E0F7FA;
+  background-color:#72dcea;
 }
 @media (max-width: 991px) {
   .topbar-one--two .topbar-one__info {
@@ -3777,11 +3777,11 @@ color:#f58220;
   height: 100px;
 }
 .main-header--two .main-header__inner::before {
-  background-color:#E0F7FA;
+  background-color:#72dcea;
 /*  min-height: 111px;*/
 }
 .main-header--two .main-header__logo {
-  background-color: #E0F7FA;
+  background-color: #72dcea;
   position: relative;
   min-height: 111px;
   top: -5px;
@@ -3798,10 +3798,10 @@ color:#f58220;
   width: 0;
   height: 0;
   display: inline-block;
-  z-index: 99;
+  z-index: -1;
   border-right: 84px solid transparent;
-  border-top: 111px solid #E0F7FA;
-  right: -83px;
+  border-top: 111px solid #72dcea;
+  right: -84px;
   top: 0;
   bottom: 0;
   margin: auto 0;
@@ -4669,7 +4669,7 @@ body.megamenu-popup-active .mobile-nav__content {
 --------------------------------------------------------------*/
 .testimonials-one {
   padding-top: 230px;
-  padding-bottom: 120px;
+  padding-bottom: 15px;
   background-color: #faf7f6;
   position: relative;
   z-index: 1;
@@ -4728,7 +4728,7 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 }
 .testimonials-one--three {
-  padding-top: 61px;
+  padding-top: 9px;
 }
 .testimonials-one--three .container {
   max-width: 1600px;
@@ -4736,7 +4736,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .testimonials-one--three .sec-title {
   text-align: center;
   padding-right: 0;
-  padding-bottom: 64px;
+  padding-bottom: 17px;
 }
 .testimonials-one--three .sec-title__tagline::before, .testimonials-one--three .sec-title__tagline::after {
   height: 1px;
@@ -4749,7 +4749,7 @@ body.megamenu-popup-active .mobile-nav__content {
   display: none;
 }
 .testimonials-one--three .testimonials-one__carousel.owl-carousel .owl-nav + .owl-dots {
-  margin-top: 16px;
+  margin-top: 0px;
 }
 .testimonials-one--three .testimonials-card {
   position: relative;
@@ -9746,7 +9746,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .mobile-nav__content {
   width: 300px;
-  background-color: #E0F7FA;
+  background-color: #72dcea;
   z-index: 10;
   position: relative;
   height: 100%;

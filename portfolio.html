@@ -81,6 +81,46 @@
     .image-container:hover .overlay {
         opacity: 1;
     }
+
+    .video-container {
+            position: relative;
+            width: 400px;
+            height: 250px;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 30px;
+            padding: 15px 20px;
+            border-radius: 50%;
+            display: none;
+            transition: 0.3s;
+        }
+
+        .video-container:hover .play-button {
+            display: block;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
 </style>
     <!-- banner -->
 </head>
@@ -115,14 +155,6 @@
                         </div>
 
                         <div class="topbar-one__social">
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                                <span class="sr-only">Linkedin</span>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
                             <a href="#">
                                 <i class="fab fa-facebook" aria-hidden="true"></i>
                                 <span class="sr-only">Facebook</span>
@@ -257,6 +289,51 @@
             </div>
         </div>
     </div>
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="video-container" style="width: 100%;  height:60vh"  id="videoContainer">
+    <img src="banner/sliderimg2.jpg"alt="Thumbnail" class="thumbnail">
+    <div class="play-button" id="playButton">▶</div>
+    <video id="video" controls>
+        <source src="banner/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<script>
+    const videoContainer = document.getElementById("videoContainer");
+    const playButton = document.getElementById("playButton");
+    const thumbnail = document.querySelector(".thumbnail");
+    const video = document.getElementById("video");
+
+    // Move play button with cursor on hover
+    videoContainer.addEventListener("mousemove", (e) => {
+        playButton.style.left = `${e.offsetX - 20}px`;
+        playButton.style.top = `${e.offsetY - 20}px`;
+        playButton.style.display = "block"; // Show play button
+    });
+
+    // Hide play button when mouse leaves
+    videoContainer.addEventListener("mouseleave", () => {
+        playButton.style.display = "none";
+    });
+
+    // Play video on click
+    videoContainer.addEventListener("click", () => {
+        thumbnail.style.display = "none"; // Hide thumbnail
+        playButton.style.display = "none"; // Hide play button
+        video.style.display = "block"; // Show video
+        video.play(); // Auto play video
+    });
+
+    // Reset after video ends
+    video.onended = function () {
+        video.style.display = "none"; // Hide video
+        thumbnail.style.display = "block"; // Show thumbnail
+        playButton.style.display = "block"; // Show play button
+    };
+</script>
+    <!-- ------------------------------------------------------------------------------------------ -->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
                     <!-- <div class="about-two__contentcol wow fadeInLeft" data-wow-delay="300ms">
@@ -400,14 +477,6 @@
                             Rights Reserved. | Designed By: <a href="#">Guru Interior Team</a></p>
                         <div class="main-footer__social">
                             <a href="#" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                                <span class="sr-only">Linkedin</span>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
-                            <a href="#" target="_blank">
                                 <i class="fab fa-facebook" aria-hidden="true"></i>
                                 <span class="sr-only">Facebook</span>
                             </a>
@@ -449,14 +518,6 @@
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__social">
-                <a href="#" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                    <span class="sr-only">Linkedin</span>
-                </a>
-                <a href="#" target="_blank">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                    <span class="sr-only">Twitter</span>
-                </a>
                 <a href="#" target="_blank">
                     <i class="fab fa-facebook" aria-hidden="true"></i>
                     <span class="sr-only">Facebook</span>
