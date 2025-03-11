@@ -35,8 +35,39 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/wallpi.css">
  <!-- banner -->
- <style>
+<style>
  .mySlides {display:none;}
+
+    .ttm-rev_slider-wide {
+        max-width: 100%;
+        height: 50vh;
+        overflow: hidden;
+    }
+
+    .w3-content {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .mySlides {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Responsive Design: Reduce height on smaller screens */
+    @media (max-width: 768px) {
+        .ttm-rev_slider-wide {
+            height: 40vh;
+            /* Reduce height for tablets */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .ttm-rev_slider-wide {
+            height: 30vh;
+            /* Reduce height for mobile devices */
+        }
+    }
 </style>
 <!-- banner -->
 </head>
@@ -121,9 +152,15 @@
         </header><!-- /.main-header -->
 
   <!-- Banner --> 
-    <div class="ttm-rev_slider-wide" style="max-width:100%; height:50vh; overflow:hidden;">
+    <!-- <div class="ttm-rev_slider-wide" style="max-width:100%; height:50vh; overflow:hidden;">
         <div class="w3-content w3-section" style="max-width:100%; height:100%;">
-            <img class="mySlides" src="banner/Untitled design.png" style="width:100%; height:100%;">
+            <img class="mySlides" src="banner/contact5.webp" style="width:100%; height:100%;">
+        </div>
+    </div> -->
+
+    <div class="ttm-rev_slider-wide">
+        <div class="w3-content w3-section">
+            <img class="mySlides" src="banner/contact5.webp">
         </div>
     </div>
 
